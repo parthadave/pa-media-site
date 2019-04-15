@@ -1,0 +1,137 @@
+body {
+  width: 1040px;
+  margin: auto;
+}
+
+.api-story-block {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 4%;
+}
+
+h2 {
+  font-family: GreycliffCF-Heavy;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+p {
+  font-family: GreycliffCF-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.api-story-block-middle {
+  text-align: center;
+}
+
+.api-story-block-middle {}
+
+.api-story {
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 20px;
+}
+
+.api-story-feature-1 {
+  font-family: GreycliffCF-Heavy;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  padding: 15px 0px;
+}
+
+.api-story img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1043px) {
+  .api-story-a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .api-story-c {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+  }
+
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+  .api-story-block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 4%;
+    grid-row-gap: 2%;
+    padding: 20px;
+  }
+
+  .api-story-block-middle {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .api-story-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2%;
+    padding: 20px;
+  }
+
+  .api-story-a {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .api-story-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2%;
+    padding: 20px;
+  }
+
+  .api-story-a {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+  }
+
+  .api-story-c {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+  }
+}
